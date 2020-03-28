@@ -27,12 +27,12 @@ public class HealthAccessService {
 
 	public String addProffessionalRespose( String option) {
 		
-		healthPofessionalRespose.put("General Doctor", "Connecting you to the next available doctor");
-		healthPofessionalRespose.put("Pediatrician",  "Connecting you to the next available  Pediatrician");
-		healthPofessionalRespose.put("Pediatrician",  "Connecting you to the next available  Pediatrician");
-		healthPofessionalRespose.put("Dentistian", "Connecting you to the next available Dentist");
-		healthPofessionalRespose.put("Optician", "Connecting to you to the next available Optician");
-		healthPofessionalRespose.put("Neurologist", "Connecting to you to the next available Neurologist ");
+		healthPofessionalRespose.put("General Doctor", "END Connecting you to the next available doctor");
+		healthPofessionalRespose.put("Pediatrician",  "END Connecting you to the next available  Pediatrician");
+		healthPofessionalRespose.put("Pediatrician",  "END Connecting you to the next available  Pediatrician");
+		healthPofessionalRespose.put("Dentistian", "END Connecting you to the next available Dentist");
+		healthPofessionalRespose.put("Optician", "END Connecting to you to the next available Optician");
+		healthPofessionalRespose.put("Neurologist", "END Connecting to you to the next available Neurologist ");
 		
 		
 		return healthPofessionalRespose.get(option);
