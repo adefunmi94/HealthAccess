@@ -30,13 +30,16 @@ public class HealthAccessController {
 			  
 			 
 		}
-		else if(theHealthPro.validateResponse(text)) {
-			Integer resInt = Integer.parseInt(text);
+		else if(!(text.isEmpty())) {
 			
+			if(theHealthPro.validateResponse(text)) {
 			
-			String option = theHealthPro.getMyResponse(resInt);
-			
-		  response = theHealthPro.addProffessionalRespose(option);
+				Integer resInt = Integer.parseInt(text);
+				
+				String option = theHealthPro.getMyResponse(resInt);
+				
+				response = theHealthPro.addProffessionalRespose(option);
+			}
 		}
 	
 		return response;
