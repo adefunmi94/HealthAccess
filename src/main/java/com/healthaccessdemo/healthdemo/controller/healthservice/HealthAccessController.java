@@ -20,6 +20,8 @@ public class HealthAccessController {
  
 //	private String sessionId;
 	private String response;
+	
+	private HealthAccessService theHealthPro;
 
 	
 	
@@ -29,9 +31,11 @@ public class HealthAccessController {
 		
 		 response.addHeader("Content-type: text/plain", "Value-HttpServletResponse");
 		 
+		 String res;
+		 
 		 logger.info(""+text);
 		   
-		if(text == "") {
+		if(text.equals("")) {
 		
 		 logger.info("empty");
 
@@ -48,58 +52,58 @@ public class HealthAccessController {
 			 
 		}
 //		
-		else if(text.equals("1")) {
-			
-			 logger.info("option 1");
-			 
-			
-				      return "CON You have selected Option 1";
-//			response =  "END Quit service";
-//			logger.info("it working right");	
-//
-////			Integer resInt = Integer.parseInt(text);
-////		
-////			
-////			String option = theHealthPro.getMyResponse(resInt);
-////			
-////			response = theHealthPro.addProffessionalRespose(option).concat("Quit service");
-//		}
-		}
-		else if(text.equals("3")) {
-			
-			 logger.info("option 3");
-			 
-			return "CON You have selected Pediatrician";
-					
-		}
-		else if(text.equals("2")) {
-			
-			 logger.info("option 2");
-			 
-			return "CON You have selected Gynecologist";
-					
-		}
-		else if(text == "0") {
-			
-			 logger.info("option 0");
-			return "END Service ended";
-		}
-		return "";
-		
-//		else {
+//		else if(text.equals("1")) {
 //			
-////			if(theHealthPro.validateResponse(text)) {
+//			 logger.info("option 1");
+//			 
 //			
-//				Integer resInt = Integer.parseInt(text);
-//				
-//				
-//				String option = theHealthPro.getMyResponse(resInt);
-//				
-//				response = theHealthPro.addProffessionalRespose(option);
-////			}
+//				      return "CON You have selected Option 1";
+////			response =  "END Quit service";
+////			logger.info("it working right");	
+////
+//////			Integer resInt = Integer.parseInt(text);
+//////		
+//////			
+//////			String option = theHealthPro.getMyResponse(resInt);
+//////			
+//////			response = theHealthPro.addProffessionalRespose(option).concat("Quit service");
+////		}
 //		}
-////	
-//		return response;
+//		else if(text.equals("3")) {
+//			
+//			 logger.info("option 3");
+//			 
+//			return "CON You have selected Pediatrician";
+//					
+//		}
+//		else if(text.equals("2")) {
+//			
+//			 logger.info("option 2");
+//			 
+//			return "CON You have selected Gynecologist";
+//					
+//		}
+//		else if(text == "0") {
+//			
+//			 logger.info("option 0");
+//			return "END Service ended";
+//		}
+//		return "";
+//		
+		else {
+			
+//			if(theHealthPro.validateResponse(text)) {
+			
+				Integer resInt = Integer.parseInt(text);
+				
+				
+				String option = theHealthPro.getMyResponse(resInt);
+				
+				res = theHealthPro.addProffessionalRespose(option);
+//			}
+		}
+	
+		return res;
 	}
 	
 	
