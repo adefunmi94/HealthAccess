@@ -2,6 +2,10 @@ package com.healthaccessdemo.healthdemo.controller.healthservice;
 
 import java.util.logging.Logger;
 
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -20,8 +24,12 @@ public class HealthAccessController {
 	
 	
 	@PostMapping("/")
-	public String showUssd(@RequestParam String text) {
+	public String showUssd(@RequestParam String text, HttpServletResponse response) {
+		 
 		
+		 response.addHeader("Content-type: text/plain", "Value-HttpServletResponse");
+
+		   
 		if(text == "") {
 		
 		 logger.info("empty");
@@ -43,8 +51,8 @@ public class HealthAccessController {
 			
 			 logger.info("option 1");
 			 
-			return "CON You have selected Option 1";
-	
+			
+				      return "CON You have selected Option 1";
 //			response =  "END Quit service";
 //			logger.info("it working right");	
 //
@@ -75,6 +83,7 @@ public class HealthAccessController {
 			 logger.info("option 0");
 			return "END Service ended";
 		}
+		return "";
 		
 //		else {
 //			
@@ -89,7 +98,14 @@ public class HealthAccessController {
 ////			}
 //		}
 ////	
-		return response;
+//		return response;
 	}
+	
+	
+//	@GetMapping("/")
+//	public String showUssd(@RequestParam String text) {
+//		
+//		return "";
+//	}
 
 }
