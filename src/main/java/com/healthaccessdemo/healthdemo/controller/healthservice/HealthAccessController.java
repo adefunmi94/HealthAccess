@@ -50,14 +50,15 @@ public class HealthAccessController {
 //		}
 		else {
 			
-			if(theHealthPro.validateResponse(text)) {
+//			if(theHealthPro.validateResponse(text)) {
 			
 				Integer resInt = Integer.parseInt(text);
 				
 				
 				String option = theHealthPro.getMyResponse(resInt);
+				
 				response = theHealthPro.addProffessionalRespose(option);
-			}
+//			}
 		}
 //	
 		return response;

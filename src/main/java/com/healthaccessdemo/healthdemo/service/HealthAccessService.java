@@ -15,12 +15,12 @@ public class HealthAccessService {
 	
 	public void addProffessional() {
 		
-		healthPofessional.put(1, "CON General Doctor");
-		healthPofessional.put(2, "CON Pediatrician");
-		healthPofessional.put(3, "CON Gynecologist");
-		healthPofessional.put(4, "CON Dentistian");
-		healthPofessional.put(5, "CON Optician");
-		healthPofessional.put(6, "CON Neurologist");
+		healthPofessional.put(1, "General Doctor");
+		healthPofessional.put(2, "Pediatrician");
+		healthPofessional.put(3, "Gynecologist");
+		healthPofessional.put(4, "Dentistian");
+		healthPofessional.put(5, "Optician");
+		healthPofessional.put(6, "Neurologist");
 		
 	}
 	
