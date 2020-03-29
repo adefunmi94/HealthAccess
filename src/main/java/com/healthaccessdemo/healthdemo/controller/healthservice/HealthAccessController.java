@@ -22,7 +22,7 @@ public class HealthAccessController {
 		
 		if(text == "") {
 		
-			logger.info("waooo! keep it up");
+			
 			
 			 response = "CON Welcome to Old Mutual Nigeria,\n Which of the Health Proffesional do you need? \n"
 			 		+ "1. General Doctor\n"
@@ -32,15 +32,15 @@ public class HealthAccessController {
 			 		+ "5. Optician\n"
 			 		+ "6. Neurologist \n"
 			 		+ "7. Quit Service";
-			  
+			 logger.info("waooo! keep it up");
 			 
 		}
 //		
 		else if(text == "1") {
-	logger.info("it working right");	
 	
 			response =  "END Quit service";
-			
+			logger.info("it working right");	
+
 //			Integer resInt = Integer.parseInt(text);
 //		
 //			
