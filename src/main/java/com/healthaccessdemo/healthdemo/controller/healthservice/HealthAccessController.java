@@ -2,7 +2,7 @@ package com.healthaccessdemo.healthdemo.controller.healthservice;
 
 import java.util.logging.Logger;
 
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,12 +18,11 @@ public class HealthAccessController {
 	private String message = "  ";
 	private HealthAccessService theHealthPro;
 	
-	@PostMapping("/")
+	@GetMapping("/")
 	public String showUssd(@RequestParam String text) {
 		
 		if(text == "") {
 		
-			
 			
 			 response = "CON Welcome to Old Mutual Nigeria,\n Which of the Health Proffesional do you need? \n"
 			 		+ "1. General Doctor\n"
@@ -33,6 +32,7 @@ public class HealthAccessController {
 			 		+ "5. Optician\n"
 			 		+ "6. Neurologist \n"
 			 		+ "7. Quit Service";
+			 
 			 logger.info("waooo! keep it up");
 			 
 		}
