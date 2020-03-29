@@ -94,20 +94,16 @@ public class HealthAccessController {
 		}
 		return "";
 //		
-		else {
+//		else {
 			
 //			if(theHealthPro.validateResponse(text)) {
 			
-				Integer resInt = Integer.parseInt(text);
+//				Integer resInt = Integer.parseInt(text);
+//				
 				
-				
-				String option = theHealthPro.getMyResponse(resInt);
-				
-				res = theHealthPro.addProffessionalRespose(option);
-//			}
-		}
+//	.
 	
-		return res;
+//		return res;
 	}
 	
 	
