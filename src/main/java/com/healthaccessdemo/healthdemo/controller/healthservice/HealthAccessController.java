@@ -51,14 +51,16 @@ public class HealthAccessController {
 //			 logger.info("waooo! keep it up");
 			 
 		}
-//		
-//		else if(text.equals("1")) {
-//			
+		
+		else if(text.equals("1")) {
+			
 //			 logger.info("option 1");
 //			 
-//			
-//				      return "CON You have selected Option 1";
-////			response =  "END Quit service";
+			
+				      return "CON You have selected Option 1\n"
+				      		+ "1. call the available Doctor\n"
+				      		+ "0. to quit";
+//			response =  "END Quit service";
 ////			logger.info("it working right");	
 ////
 //////			Integer resInt = Integer.parseInt(text);
@@ -68,27 +70,29 @@ public class HealthAccessController {
 //////			
 //////			response = theHealthPro.addProffessionalRespose(option).concat("Quit service");
 ////		}
-//		}
-//		else if(text.equals("3")) {
-//			
-//			 logger.info("option 3");
-//			 
-//			return "CON You have selected Pediatrician";
-//					
-//		}
-//		else if(text.equals("2")) {
-//			
-//			 logger.info("option 2");
-//			 
-//			return "CON You have selected Gynecologist";
-//					
-//		}
-//		else if(text == "0") {
-//			
-//			 logger.info("option 0");
-//			return "END Service ended";
-//		}
-//		return "";
+		}
+		else if(text.equals("3")) {
+			
+			 logger.info("option 3");
+			 
+			return "CON You have selected Pediatrician\n"
+					+ "1. call the available Doctor\n"
+					+ "0 to go back";
+					
+		}
+		else if(text.equals("2")) {
+			
+			 logger.info("option 2");
+			 
+			return "CON You have selected Gynecologist";
+					
+		}
+		else if(text == "0") {
+			
+			 logger.info("option 0");
+			return "END Service ended";
+		}
+		return "";
 //		
 		else {
 			
