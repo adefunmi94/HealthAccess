@@ -11,7 +11,7 @@ public class HealthAccessController {
 
 	private String sessionId;
 	private String response;
-	
+	private String message = "  ";
 	private HealthAccessService theHealthPro;
 	
 	@PostMapping("/")
@@ -30,18 +30,36 @@ public class HealthAccessController {
 			  
 			 
 		}
-		else if(!(text.isEmpty())) {
+		
+		else if(text == "1") {
 			
-			if(theHealthPro.validateResponse(text)) {
-			
-				Integer resInt = Integer.parseInt(text);
-				
-				String option = theHealthPro.getMyResponse(resInt);
-				
-				response = theHealthPro.addProffessionalRespose(option);
-			}
+			response = "CON You have selected Genera Doctor \n "
+					+ "1. Connecting you to available General Doctor\n 2."
+					+ message 
+					+ "END Quit service ";
 		}
-	
+		else if(text == "2") {
+			response = "CON You have selected Pediatrician \n "
+					+ "1. Connecting you to available Pediatrician\n"
+					+ "2. END Quit service";
+		}
+		else if(text == "3") {
+			response = "CON You have selected Gynecologist\n "
+					+ "1. Connecting you to available Gynacolo\n"
+					+ "2. END Quit service";
+		}
+//		else ((!(text.isEmpty())) {
+//			
+//			if(theHealthPro.validateResponse(text)) {
+//			
+//				Integer resInt = Integer.parseInt(text);
+//				
+//				
+//				String option = theHealthPro.getMyResponse(resInt);
+//				response = theHealthPro.addProffessionalRespose(option);
+//			}
+//		}
+//	
 		return response;
 	}
 
