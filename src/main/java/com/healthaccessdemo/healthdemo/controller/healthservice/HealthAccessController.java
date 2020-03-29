@@ -48,7 +48,7 @@ public class HealthAccessController {
 			 
 		}
 //		
-		else if(text == "1") {
+		else if(text.equals("1")) {
 			
 			 logger.info("option 1");
 			 
@@ -65,14 +65,14 @@ public class HealthAccessController {
 ////			response = theHealthPro.addProffessionalRespose(option).concat("Quit service");
 //		}
 		}
-		else if(text == "3") {
+		else if(text.equals("3")) {
 			
 			 logger.info("option 3");
 			 
 			return "CON You have selected Pediatrician";
 					
 		}
-		else if(text == "2") {
+		else if(text.equals("2")) {
 			
 			 logger.info("option 2");
 			 
