@@ -12,6 +12,7 @@ import com.healthaccessdemo.healthdemo.service.HealthAccessService;
 @RestController
 public class HealthAccessController {
 	
+	Logger logger = Logger.getLogger(getClass().getName());
  
 //	private String sessionId;
 	private String response;
@@ -23,8 +24,9 @@ public class HealthAccessController {
 		
 		if(text == "") {
 		
-//			
-			 response = "CON Welcome to Old Mutual Nigeria,\n Which of the Health Proffesional do you need? \n"
+		 logger.info("empty");
+
+			 return "CON Welcome to Old Mutual Nigeria,\n Which of the Health Proffesional do you need? \n"
 			 		+ "1. General Doctor\n"
 			 		+ "2. Pediatrician\n"
 			 		+ "3. Gynecologist\n"
@@ -39,7 +41,9 @@ public class HealthAccessController {
 //		
 		else if(text == "1") {
 			
-			response = "CON You have selected Option 1";
+			 logger.info("option 1");
+			 
+			return "CON You have selected Option 1";
 	
 //			response =  "END Quit service";
 //			logger.info("it working right");	
@@ -53,15 +57,23 @@ public class HealthAccessController {
 //		}
 		}
 		else if(text == "3") {
-			response = "CON You have selected Pediatrician";
+			
+			 logger.info("option 3");
+			 
+			return "CON You have selected Pediatrician";
 					
 		}
 		else if(text == "2") {
-			response = "CON You have selected Gynecologist";
+			
+			 logger.info("option 2");
+			 
+			return "CON You have selected Gynecologist";
 					
 		}
 		else if(text == "0") {
-			response = "END Service ended";
+			
+			 logger.info("option 0");
+			return "END Service ended";
 		}
 		
 //		else {
