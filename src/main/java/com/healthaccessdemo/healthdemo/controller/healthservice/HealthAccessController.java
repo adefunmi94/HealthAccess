@@ -1,5 +1,7 @@
 package com.healthaccessdemo.healthdemo.controller.healthservice;
 
+import java.util.logging.Logger;
+
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,7 +10,8 @@ import com.healthaccessdemo.healthdemo.service.HealthAccessService;
 
 @RestController
 public class HealthAccessController {
-
+ private Logger logger;
+ 
 	private String sessionId;
 	private String response;
 	private String message = "  ";
@@ -18,6 +21,8 @@ public class HealthAccessController {
 	public String showUssd(@RequestParam String text) {
 		
 		if(text == "") {
+		
+			logger.info("waooo! keep it up");
 			
 			 response = "CON Welcome to Old Mutual Nigeria,\n Which of the Health Proffesional do you need? \n"
 			 		+ "1. General Doctor\n"
@@ -32,7 +37,8 @@ public class HealthAccessController {
 		}
 //		
 		else if(text == "1") {
-			
+	logger.info("it working right");	
+	
 			response =  "END Quit service";
 			
 //			Integer resInt = Integer.parseInt(text);
