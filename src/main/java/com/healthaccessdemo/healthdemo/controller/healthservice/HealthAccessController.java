@@ -33,14 +33,14 @@ public class HealthAccessController {
 //		
 		else if(text == "1") {
 			
-//			response =  "END Quit service ";
+			response =  "END Quit service";
 			
-			Integer resInt = Integer.parseInt(text);
-			
-			
-			String option = theHealthPro.getMyResponse(resInt);
-			
-			response = theHealthPro.addProffessionalRespose(option).concat("Quit service");
+//			Integer resInt = Integer.parseInt(text);
+//		
+//			
+//			String option = theHealthPro.getMyResponse(resInt);
+//			
+//			response = theHealthPro.addProffessionalRespose(option).concat("Quit service");
 //		}
 		}
 //		else if(text == "2") {
