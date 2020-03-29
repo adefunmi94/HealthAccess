@@ -28,7 +28,8 @@ public class HealthAccessController {
 		 
 		
 		 response.addHeader("Content-type: text/plain", "Value-HttpServletResponse");
-
+		 
+		 logger.info(""+text);
 		   
 		if(text == "") {
 		
