@@ -10,7 +10,8 @@ import com.healthaccessdemo.healthdemo.service.HealthAccessService;
 
 @RestController
 public class HealthAccessController {
- private Logger logger;
+	
+ private Logger logger = Logger.getLogger(HealthAccessController.class.getName());
  
 	private String sessionId;
 	private String response;
