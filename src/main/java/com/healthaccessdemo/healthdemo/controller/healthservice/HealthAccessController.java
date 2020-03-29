@@ -11,19 +11,17 @@ import com.healthaccessdemo.healthdemo.service.HealthAccessService;
 @RestController
 public class HealthAccessController {
 	
- private Logger logger = Logger.getLogger(HealthAccessController.class.getName());
  
-	private String sessionId;
+//	private String sessionId;
 	private String response;
-	private String message = "  ";
-	private HealthAccessService theHealthPro;
+
 	
 	@GetMapping("/")
 	public String showUssd(@RequestParam String text) {
 		
 		if(text == "") {
 		
-			
+//			
 			 response = "CON Welcome to Old Mutual Nigeria,\n Which of the Health Proffesional do you need? \n"
 			 		+ "1. General Doctor\n"
 			 		+ "2. Pediatrician\n"
@@ -33,33 +31,37 @@ public class HealthAccessController {
 			 		+ "6. Neurologist \n"
 			 		+ "7. Quit Service";
 			 
-			 logger.info("waooo! keep it up");
+//			 logger.info("waooo! keep it up");
 			 
 		}
 //		
 		else if(text == "1") {
+			
+			response = "CON You have selected Option 1";
 	
-			response =  "END Quit service";
-			logger.info("it working right");	
-
-//			Integer resInt = Integer.parseInt(text);
-//		
-//			
-//			String option = theHealthPro.getMyResponse(resInt);
-//			
-//			response = theHealthPro.addProffessionalRespose(option).concat("Quit service");
+//			response =  "END Quit service";
+//			logger.info("it working right");	
+//
+////			Integer resInt = Integer.parseInt(text);
+////		
+////			
+////			String option = theHealthPro.getMyResponse(resInt);
+////			
+////			response = theHealthPro.addProffessionalRespose(option).concat("Quit service");
 //		}
 		}
-//		else if(text == "2") {
-//			response = "CON You have selected Pediatrician \n "
-//					+ "1. Connecting you to available Pediatrician\n"
-//					+ "2. END Quit service";
-//		}
-//		else if(text == "3") {
-//			response = "CON You have selected Gynecologist\n "
-//					+ "1. Connecting you to available Gynacolo\n"
-//					+ "2. END Quit service";
-//		}
+		else if(text == "3") {
+			response = "CON You have selected Pediatrician";
+					
+		}
+		else if(text == "2") {
+			response = "CON You have selected Gynecologist";
+					
+		}
+		else if(text == "0") {
+			response = "END Service ended";
+		}
+		
 //		else {
 //			
 ////			if(theHealthPro.validateResponse(text)) {
