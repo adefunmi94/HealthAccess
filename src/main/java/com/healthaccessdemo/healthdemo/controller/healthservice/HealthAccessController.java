@@ -3,6 +3,7 @@ package com.healthaccessdemo.healthdemo.controller.healthservice;
 import java.util.logging.Logger;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,7 +17,8 @@ public class HealthAccessController {
 	private String response;
 
 	
-	@GetMapping("/")
+	
+	@PostMapping("/")
 	public String showUssd(@RequestParam String text) {
 		
 		if(text == "") {
