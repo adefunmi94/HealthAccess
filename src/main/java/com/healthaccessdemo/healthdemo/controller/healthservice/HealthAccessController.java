@@ -19,7 +19,7 @@ public class HealthAccessController {
 	Logger logger = Logger.getLogger(getClass().getName());
  
 //	private String sessionId;
-	private String response;
+	private String res;
 	
 //	private HealthAccessService theHealthPro;
 
@@ -30,16 +30,14 @@ public class HealthAccessController {
 		 
 		
 		 response.addHeader("Content-type: text/plain", "Value-HttpServletResponse");
-		 
-		 String res;
-		 
+		 	 
 		 logger.info(""+text);
 		   
 		if(text.equals("")) {
 		
 		 logger.info("empty");
 
-			 return "CON Welcome to Old Mutual Nigeria,\n Which of the Health Proffesional do you need? \n"
+			res = "CON Welcome to Old Mutual Nigeria,\n Which of the Health Proffesional do you need? \n"
 			 		+ "1. General Doctor\n"
 			 		+ "2. Pediatrician\n"
 			 		+ "3. Gynecologist\n"
@@ -52,11 +50,12 @@ public class HealthAccessController {
 			 
 		}
 		
-		else if(text.equals("1") && text.equals("1")) {
+		else if(text.equals("1")) {
 			
 //			 logger.info("option 1");
 //			 
-				      return "END Connecting you to the available Doctor ->>>\n";
+				      return "END Connecting you to the available Doctor ->>>\n"
+				      		+ "0. Quit "+ res;
 				 	      	
 				     
 //			response =  "END Quit service";
@@ -81,7 +80,7 @@ public class HealthAccessController {
 					
 		}
 		else if(text.equals("2")) {
-			
+			  
 			 logger.info("option 2");
 			 
 			return "CON You have selected Gynecologist";
