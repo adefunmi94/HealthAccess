@@ -58,8 +58,8 @@ public class HealthAccessController {
 //			 
 			
 				      return "CON You have selected Option 1\n"
-				      		+ "1. Connecting you to the available Doctor ->>>\n"
-				      		+ "0. to quit";
+				      		+ "END Connecting you to the available Doctor ->>>\n"	;
+				      	
 //			response =  "END Quit service";
 ////			logger.info("it working right");	
 ////
