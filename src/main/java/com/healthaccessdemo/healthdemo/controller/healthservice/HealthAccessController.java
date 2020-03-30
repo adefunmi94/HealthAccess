@@ -70,34 +70,34 @@ public class HealthAccessController {
 		
 		 case "1": 
 			 
-	            return "CON Connecting you to General Doctor ->>>\n Please Hold on";
+	            return "END Connecting you to General Doctor ->>>\n Please Hold on";
 	            		
 	            
 		 	case "2":
 			 
-			 return "CON Connecting-->>>> Pediatrician\n"
-			 		+ "0. quit";
+			 return "END Connecting-->>>> Pediatrician\n";
+			 		
 			 
 		 	case "3":
 				 
-				 return "CON Connecting-->>>> Gynecologist\n"
-				 		+ "0. quit";
+				 return "END Connecting-->>>> Gynecologist";
+				 		
 				 
 		 	case "4":
 				 
-				 return "CON Connecting-->>>>Dentistian\n"
-				 		+ "0. quit";
+				 return "END Connecting-->>>>Dentistian";
+				 		
 				 
 				 
 		 	case "5":
 				 
-				 return "CON Connecting-->>>>Dentistian\n"
-				 		+ "0. quit";
+				 return "END Connecting-->>>>Dentistian";
+				 		
 				 
 		 	case "6":
 				 
-				 return "CON Connecting-->>>>Dentistian\n"
-				 		+ "0. quit" ;
+				 return "END Connecting-->>>>Dentistian";
+				 		
 				 
 				 
 				 
