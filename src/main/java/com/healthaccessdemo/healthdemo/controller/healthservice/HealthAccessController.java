@@ -57,8 +57,8 @@ public class HealthAccessController {
 //			 logger.info("option 1");
 //			 
 			
-				      return "CON You have selected Option 1\n"
-				      		+ "END Connecting you to the available Doctor ->>>\n"	;
+				      return "END Connecting you to the available Doctor ->>>\n";
+				      		
 				      	
 //			response =  "END Quit service";
 ////			logger.info("it working right");	
@@ -73,10 +73,10 @@ public class HealthAccessController {
 		}
 		else if(text.equals("2")) {
 			
-			 logger.info("option 3");
+			 logger.info("2");
 			 
 			return "CON You have selected Pediatrician\n"
-					+ "1. call the available Doctor\n"
+					+ "The available Doctor will call shortly\n"
 					+ "0 to go back";
 					
 		}
