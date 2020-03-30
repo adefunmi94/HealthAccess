@@ -37,33 +37,32 @@ public class HealthAccessController {
 		 logger.info("empty");
 
 			 return "CON Welcome to Old Mutual MumTribe,\n Which of our service do need? \n"
-			 		+ "1. Register\n"
-			 		+ "2. Menu\n"
-			 		+ "3. About Us\n";
+//			 		+ "1. Register\n"
+			 		+ "1. Menu\n";
+//			 		+ "3. About Us\n";
 			 		
 //			 logger.info("waooo! keep it up");
 			 
 		}		
 		
-		else if(text.equals("1*1")) {
+		else if(text.equals("1")) {
 			
 //			 logger.info("option 1");
-				      return "CON You have selected Option 1\n"
-				      		+ "1. call the available Doctor\n"
-				      		+ "0. to quit";
+				      return "CON Welcome to MumTribe 24/7 access to Health professionals\n Select your Doctor: \n"
+				        + "1.  General Doctor\n"
+				 		+ "2. Pediatrician\n"
+				 		+ "3. Gynecologist\n"
+				 		+ "4. Dentistian\n"
+				 		+ "5. Optician\n"
+				 		+ "6. Neurologist \n"
+				 		+ "7. Quit Service";
+				 
 		}    
 				      else if(text.equals("2")) {
 							
 //							 logger.info("option 1");
-								      return "CON Welcome to MumTribe 24/7 access to Health professionals\n Select your Doctor\n"
-								        + "1.  General Doctor\n"
-								 		+ "2. Pediatrician\n"
-								 		+ "3. Gynecologist\n"
-								 		+ "4. Dentistian\n"
-								 		+ "5. Optician\n"
-								 		+ "6. Neurologist \n"
-								 		+ "7. Quit Service";
-								 
+								      return  " END Please hold while Connecting you to General Doctor ->>>>\n"
+								    	  		+ "0. to quit";
 						
 								      
 //								      if(text.equals("1")) {
@@ -85,20 +84,20 @@ public class HealthAccessController {
 ////		}
 								      
 		}
-		else if(text.equals("3")) {
-			
-			 logger.info("option 3");
-			 
-			return "CON You have selected Pediatrician\n"
-					+ "1. call the available Doctor\n"
-					+ "0 to go back";
-					
-		}
 		else if(text.equals("2")) {
 			
 			 logger.info("option 2");
 			 
-			return "CON You have selected Gynecologist";
+			return "CON You have selected Pediatrician\n"
+					+ "1. call the available Doctor\n"
+					+ "0. to go back";
+					
+		}
+		else if(text.equals("3")) {
+			
+			 logger.info("option 3");
+			 
+			return "END Please hold while Connecting you to General Doctor ->>>>";
 					
 		}
 		else if(text == "0") {
