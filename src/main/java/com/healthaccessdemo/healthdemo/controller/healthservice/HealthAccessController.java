@@ -48,15 +48,40 @@ public class HealthAccessController {
 			 
 //			 logger.info("waooo! keep it up");
 			 
+		
 		}
 		
-		else if(text.equals("1")) {
-			
-//			 logger.info("option 1");
-//			 
-				      return "END Connecting you to the available Doctor ->>>\n"
-				      		+ "0. Quit ";
-				 	      	
+		res = text;
+		
+		switch(res) {
+		
+		 case "1": 
+			 
+	            return "CON Connecting you to General Doctor ->>>\n Please Hold on";
+	            
+		 	case "2":
+			 
+			 return "CON Connecting-->>>> Pediatrician\n"
+			 		+ "0. quit" + res;
+			 
+		case "0":
+			 
+			 return "End QUit Service";
+			 		
+			 
+		default:   
+	            return "Thank you"; 
+		}
+		
+		}
+		
+//		else if(text.equals("1")) {
+//			
+////			 logger.info("option 1");
+////			 
+//				      return "END Connecting you to the available Doctor ->>>\n"
+//				      		+ "0. Quit ";
+//				 	      	
 				     
 //			response =  "END Quit service";
 ////			logger.info("it working right");	
@@ -68,79 +93,79 @@ public class HealthAccessController {
 //////			
 //////			response = theHealthPro.addProffessionalRespose(option).concat("Quit service");
 ////		}      
-		}
-		
-		else if(text.equals("2")) {
-			
-			 logger.info("2");
-			 
-			return "CON You have selected Pediatrician\n"
-					+ "The available Doctor will call shortly\n"
-					+ "0. to go back";
-					
-		}
-		else if(text.equals("3")) {
-			  
-			 logger.info("option 3");
-			 
-			return "END Connecting you the available Doctor ->>>>>\n"
-					+ "0. To quit";
-					
-		}
-		else if(text == "4") {
-			
-			 logger.info("option 3");
-			 
-			return "CON You have selectedi Dentistian\n"
-					+ "0. To quit";
-					
-		}
-		else if(text == "5") {
-			
-			 logger.info("option 5");
-			 
-			return "CON You have selected \n"
-					+ "0. To quit";
-					
-		}
-		
-		else if(text == "6") {
-			
-			 logger.info("option 6");
-			 
-			return "CON You have selected Neurologist\n"
-					+ "0. To quit";
-					
-		}
-		else if(text == "7") {
-			
-			 logger.info("option 3");
-			 
-			return "END Thank you.";
-					
-					
-		}
-		
-		
-		return "";
+//		}
 //		
-//		else {
-			
-//			if(theHealthPro.validateResponse(text)) {
-			
-//				Integer resInt = Integer.parseInt(text);
+//		else if(text.equals("2")) {
+//			
+//			 logger.info("2");
+//			 
+//			return "CON You have selected Pediatrician\n"
+//					+ "The available Doctor will call shortly\n"
+//					+ "0. to go back";
+//					
+//		}
+//		else if(text.equals("3")) {
+//			  
+//			 logger.info("option 3");
+//			 
+//			return " CON Cnnecting you the available Doctor ->>>>>\n"
+//					+ "0. To quit";
+//					
+//		}
+//		else if(text == "4") {
+//			
+//			 logger.info("option 3");
+//			 
+//			return "CON You have selectedi Dentistian\n"
+//					+ "0. To quit";
+//					
+//		}
+//		else if(text == "5") {
+//			
+//			 logger.info("option 5");
+//			 
+//			return "CON You have selected \n"
+//					+ "0. To quit";
+//					
+//		}
+//		
+//		else if(text == "6") {
+//			
+//			 logger.info("option 6");
+//			 
+//			return "CON You have selected Neurologist\n"
+//					+ "0. To quit";
+//					
+//		}
+//		else if(text == "7") {
+//			
+//			 logger.info("option 3");
+//			 
+//			return "END Thank you.";
+//					
+//					
+//		}
+//		
+//		
+//		return "";
+////		
+////		else {
+//			
+////			if(theHealthPro.validateResponse(text)) {
+//			
+////				Integer resInt = Integer.parseInt(text);
+////				
 //				
-				
-//	.
-	
-//		return res;
-	}
+////	.
+//	
+////		return res;
+//	}
 	
 	
 //	@GetMapping("/")
 //	public String showUssd(@RequestParam String text) {
 //		
 //		return "";
-//	}
+	}
 
-}
+
