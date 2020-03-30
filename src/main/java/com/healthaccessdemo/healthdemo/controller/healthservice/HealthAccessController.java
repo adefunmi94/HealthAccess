@@ -57,14 +57,15 @@ public class HealthAccessController {
 		
 		 case "1": 
 			 
-	            return "CON Connecting you to General Doctor ->>>\n Please Hold on";
+	            return "CON Connecting you to General Doctor ->>>\n Please Hold on\n"
+	            		+ "0. go to Menu"+ res;
 	            
 		 	case "2":
 			 
 			 return "CON Connecting-->>>> Pediatrician\n"
 			 		+ "0. quit" + res;
 			 
-		case "0":
+		case "7":
 			 
 			 return "End QUit Service";
 			 		
