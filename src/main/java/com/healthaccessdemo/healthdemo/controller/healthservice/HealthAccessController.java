@@ -83,7 +83,7 @@ public class HealthAccessController {
 			  
 			 logger.info("option 3");
 			 
-			return "CON You have selected Gynecologist\n"
+			return "END Connecting you the available Doctor ->>>>>\n"
 					+ "0. To quit";
 					
 		}
@@ -99,7 +99,7 @@ public class HealthAccessController {
 			
 			 logger.info("option 5");
 			 
-			return "CON You have selected Optician\n"
+			return "CON You have selected \n"
 					+ "0. To quit";
 					
 		}
