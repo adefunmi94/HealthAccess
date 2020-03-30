@@ -21,9 +21,22 @@ public class HealthAccessController {
 //	private String sessionId;
 	private String res ;
 	
+//	private String response;
 //	private HealthAccessService theHealthPro;
 
-	
+
+//	public void showUssdMenu(@RequestParam String res) {
+//		
+//		response =  "CON Welcome to Old Mutual Nigeria,\n Which of the Health Proffesional do you need? \n"
+//		 		+ "1. General Doctor\n"
+//		 		+ "2. Pediatrician\n"
+//		 		+ "3. Gynecologist\n"
+//		 		+ "4. Dentistian\n"
+//		 		+ "5. Optician\n"
+//		 		+ "6. Neurologist \n"
+//		 		+ "7. Quit Service";
+//		 
+//	}
 	
 	@PostMapping("/")
 	public String showUssd(@RequestParam String text, HttpServletResponse response) {
@@ -84,14 +97,14 @@ public class HealthAccessController {
 		 	case "6":
 				 
 				 return "CON Connecting-->>>>Dentistian\n"
-				 		+ "0. quit";
+				 		+ "0. quit" ;
 				 
 				 
 				 
 				 case "7":
 					 
-					 return "Thank you\n"
-					 		+ "END we love to see more of u";
+					 return "END Thank you";
+					 		
 		
 			 		
 		default:   
