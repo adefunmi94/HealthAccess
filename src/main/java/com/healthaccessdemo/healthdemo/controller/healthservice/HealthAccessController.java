@@ -21,7 +21,7 @@ public class HealthAccessController {
 //	private String sessionId;
 	private String response;
 	
-	private HealthAccessService theHealthPro;
+//	private HealthAccessService theHealthPro;
 
 	
 	
@@ -58,7 +58,7 @@ public class HealthAccessController {
 //			 
 			
 				      return "CON You have selected Option 1\n"
-				      		+ "1. call the available Doctor\n"
+				      		+ "1. Connecting you to the available Doctor ->>>\n"
 				      		+ "0. to quit";
 //			response =  "END Quit service";
 ////			logger.info("it working right");	
@@ -71,7 +71,7 @@ public class HealthAccessController {
 //////			response = theHealthPro.addProffessionalRespose(option).concat("Quit service");
 ////		}
 		}
-		else if(text.equals("3")) {
+		else if(text.equals("2")) {
 			
 			 logger.info("option 3");
 			 
