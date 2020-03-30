@@ -90,7 +90,7 @@ public class HealthAccessController {
 				 
 				 case "7":
 					 
-					 return "End QUit Service";
+					 return "CON Thank you";
 		
 			 		
 		default:   
