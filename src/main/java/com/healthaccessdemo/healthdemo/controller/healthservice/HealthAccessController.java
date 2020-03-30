@@ -52,14 +52,13 @@ public class HealthAccessController {
 			 
 		}
 		
-		else if(text.equals("1")) {
+		else if(text.equals("1") && text.equals("1")) {
 			
 //			 logger.info("option 1");
 //			 
-			
 				      return "END Connecting you to the available Doctor ->>>\n";
-				      		
-				      	
+				 	      	
+				     
 //			response =  "END Quit service";
 ////			logger.info("it working right");	
 ////
@@ -69,15 +68,16 @@ public class HealthAccessController {
 //////			String option = theHealthPro.getMyResponse(resInt);
 //////			
 //////			response = theHealthPro.addProffessionalRespose(option).concat("Quit service");
-////		}
+////		}      
 		}
+		
 		else if(text.equals("2")) {
 			
 			 logger.info("2");
 			 
 			return "CON You have selected Pediatrician\n"
 					+ "The available Doctor will call shortly\n"
-					+ "0 to go back";
+					+ "0. to go back";
 					
 		}
 		else if(text.equals("2")) {
@@ -87,10 +87,11 @@ public class HealthAccessController {
 			return "CON You have selected Gynecologist";
 					
 		}
-		else if(text == "0") {
+		else if(text == "3") {
 			
-			 logger.info("option 0");
-			return "END Service ended";
+			 logger.info("option 3");
+			 
+			return "";
 		}
 		return "";
 //		
