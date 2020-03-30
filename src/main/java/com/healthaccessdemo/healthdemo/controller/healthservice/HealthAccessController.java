@@ -90,7 +90,8 @@ public class HealthAccessController {
 				 
 				 case "7":
 					 
-					 return "CON Thank you";
+					 return "Thank you\n"
+					 		+ "END we love to see more of u";
 		
 			 		
 		default:   
