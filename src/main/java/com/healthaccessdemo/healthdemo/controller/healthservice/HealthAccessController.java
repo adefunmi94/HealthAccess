@@ -58,10 +58,10 @@ public class HealthAccessController {
 				 		+ "7. Quit Service";
 				 
 		}    
-				      else if(text.equals("2")) {
+				      else if(text.equals("1")) {
 							
 //							 logger.info("option 1");
-								      return  " END Please hold while Connecting you to General Doctor ->>>>\n"
+								      return  " CON Please hold while Connecting you to General Doctor ->>>>\n"
 								    	  		+ "0. to quit";
 						
 								      
@@ -86,7 +86,7 @@ public class HealthAccessController {
 		}
 		else if(text.equals("2")) {
 			
-			 logger.info("option 2");
+			 logger.info("option 3");
 			 
 			return "CON You have selected Pediatrician\n"
 					+ "1. call the available Doctor\n"
@@ -95,9 +95,9 @@ public class HealthAccessController {
 		}
 		else if(text.equals("3")) {
 			
-			 logger.info("option 3");
+			 logger.info("option 4");
 			 
-			return "END Please hold while Connecting you to General Doctor ->>>>";
+			return "CON Please hold while Connecting you to General Doctor ->>>>";
 					
 		}
 		else if(text == "0") {
