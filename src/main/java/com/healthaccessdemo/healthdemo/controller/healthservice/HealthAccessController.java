@@ -19,7 +19,7 @@ public class HealthAccessController {
 	Logger logger = Logger.getLogger(getClass().getName());
  
 //	private String sessionId;
-	private String res;
+	private String res ;
 	
 //	private HealthAccessService theHealthPro;
 
@@ -37,7 +37,7 @@ public class HealthAccessController {
 		
 		 logger.info("empty");
 
-			res = "CON Welcome to Old Mutual Nigeria,\n Which of the Health Proffesional do you need? \n"
+			return "CON Welcome to Old Mutual Nigeria,\n Which of the Health Proffesional do you need? \n"
 			 		+ "1. General Doctor\n"
 			 		+ "2. Pediatrician\n"
 			 		+ "3. Gynecologist\n"
@@ -55,7 +55,7 @@ public class HealthAccessController {
 //			 logger.info("option 1");
 //			 
 				      return "END Connecting you to the available Doctor ->>>\n"
-				      		+ "0. Quit "+ res;
+				      		+ "0. Quit ";
 				 	      	
 				     
 //			response =  "END Quit service";
@@ -79,19 +79,49 @@ public class HealthAccessController {
 					+ "0. to go back";
 					
 		}
-		else if(text.equals("2")) {
+		else if(text.equals("3")) {
 			  
-			 logger.info("option 2");
+			 logger.info("option 3");
 			 
-			return "CON You have selected Gynecologist";
+			return "CON You have selected Gynecologist\n"
+					+ "0. To quit";
 					
 		}
-		else if(text == "3") {
+		else if(text == "4") {
 			
 			 logger.info("option 3");
 			 
-			return "";
+			return "CON You have selectedi Dentistian\n"
+					+ "0. To quit";
+					
 		}
+		else if(text == "5") {
+			
+			 logger.info("option 5");
+			 
+			return "CON You have selected Optician\n"
+					+ "0. To quit";
+					
+		}
+		
+		else if(text == "6") {
+			
+			 logger.info("option 6");
+			 
+			return "CON You have selected Neurologist\n"
+					+ "0. To quit";
+					
+		}
+		else if(text == "7") {
+			
+			 logger.info("option 3");
+			 
+			return "END Thank you.";
+					
+					
+		}
+		
+		
 		return "";
 //		
 //		else {
