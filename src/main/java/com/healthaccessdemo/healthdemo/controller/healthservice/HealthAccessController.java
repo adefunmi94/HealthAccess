@@ -15,9 +15,8 @@ import com.healthaccessdemo.healthdemo.service.HealthAccessService;
 
 @RestController
 public class HealthAccessController {
-	
 	Logger logger = Logger.getLogger(getClass().getName());
- 
+	 
 //	private String sessionId;
 	private String response;
 	
@@ -28,12 +27,10 @@ public class HealthAccessController {
 	@PostMapping("/")
 	public String showUssd(@RequestParam String text, HttpServletResponse response) {
 		 
-		
-		 response.addHeader("Content-type: text/plain", "Value-HttpServletResponse");
+		response.addHeader("Content-type: text/plain", "Value-HttpServletResponse");
 		 
 		 String res;
 		 
-		 logger.info(""+text);
 		   
 		if(text.equals("")) {
 		
@@ -48,18 +45,13 @@ public class HealthAccessController {
 			 
 		}		
 		
-		else if(text.equals("1")) {
+		else if(text.equals("1*1")) {
 			
 //			 logger.info("option 1");
 				      return "CON You have selected Option 1\n"
 				      		+ "1. call the available Doctor\n"
 				      		+ "0. to quit";
-				      
-				      if(text.equals("1")) {
-				    	  
-				    	  return "Connecting to Doctor ->>>>";
-				      }
-				      
+		}    
 				      else if(text.equals("2")) {
 							
 //							 logger.info("option 1");
@@ -74,11 +66,11 @@ public class HealthAccessController {
 								 
 						
 								      
-								      if(text.equals("1")) {
-								    	  
-								    	  return "Please hold while Connecting you to General Doctor ->>>>\n"
-								    	  		+ "0. to quit";
-								      }
+//								      if(text.equals("1")) {
+//								    	  
+//								    	  return "Please hold while Connecting you to General Doctor ->>>>\n"
+//								    	  		+ "0. to quit";
+//								      }
 						
 				      
 //			response =  "END Quit service";
@@ -126,13 +118,15 @@ public class HealthAccessController {
 //	.
 	
 //		return res;
-	}
+
+		 	}
 	
 	
 //	@GetMapping("/")
 //	public String showUssd(@RequestParam String text) {
 //		
 //		return "";
-//	}
+	
 
-}
+
+	}
